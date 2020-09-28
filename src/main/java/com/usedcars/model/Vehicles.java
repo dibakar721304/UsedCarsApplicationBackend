@@ -1,5 +1,6 @@
 package com.usedcars.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -75,7 +76,7 @@ public class Vehicles {
 	@JsonProperty("licensed")
 	private Boolean licensed;
 	@JsonProperty("date_added")
-	private Date dateAdded;
+	private LocalDate dateAdded;
 
 	@JsonProperty("_id")
 	public Integer getId() {
@@ -138,12 +139,12 @@ public class Vehicles {
 	}
 
 	@JsonProperty("date_added")
-	public Date getDateAdded() {
+	public LocalDate getDateAdded() {
 		return dateAdded;
 	}
 
 	@JsonProperty("date_added")
-	public void setDateAdded(Date dateAdded) {
+	public void setDateAdded(LocalDate dateAdded) {
 		this.dateAdded = dateAdded;
 	}
 
