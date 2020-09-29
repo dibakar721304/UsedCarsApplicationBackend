@@ -1,0 +1,16 @@
+Used car application.
+
+How to build:
+1)Checkout or download code from github.
+2) Import as amaven project in eclipse.
+3) Do a maven build with goal "clean install"
+
+How to run:
+1) Right click on project and go to run as-> run configuration.
+2) Under maven build,create a run configuration with goal "spring-boot:run"
+3) Application will be started
+
+To access the car list from postman:
+1) Select method as GET and header as "Content-Type:application/json"
+2) Request url:  http://localhost:8080/api/vehicles
+ SSL security should be off in postman
